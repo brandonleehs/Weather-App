@@ -14,21 +14,19 @@ export default class Home extends View {
   private _createHTML(): void {
     const body = document.querySelector('body') as HTMLBodyElement;
     body.innerHTML = `
-    <form action="" method="get" class="weather-form">
-        <div>
-            <label for="weather-location">Location</label>
-            <input type="text" id="weather-location" required aria-required="true">
-        </div>
-        <button class="weather-form__submit">Submit</button>
+    <form action="" method="get" class="home__form">
+    <div class="searchbar">
+      <input type="text" class="searchbar__input" required aria-required="true" placeholder="Location"><button class="searchbar__submit">Search</button>
+    </div>
     </form>`;
   }
 
   private _bindEvents(): void {
     const submitButton = document.querySelector(
-      '.weather-form__submit'
+      '.searchbar__submit'
     ) as HTMLButtonElement;
     const weatherLocationInput = document.querySelector(
-      '#weather-location'
+      '.searchbar__input'
     ) as HTMLInputElement;
 
     submitButton.addEventListener('click', (e: Event): void => {

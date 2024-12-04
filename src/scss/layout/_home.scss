@@ -1,0 +1,8 @@
+.home {
+  &__form {
+    --form-padding: 2rem;
+
+    padding: var(--form-padding);
+    margin-inline: 1rem;
+  }
+}

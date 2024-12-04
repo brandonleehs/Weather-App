@@ -1,0 +1,37 @@
+@use '../base' as *;
+
+.searchbar {
+  --input-padding: 0.25rem 0.5rem;
+  --border: 1px solid #e0e0e0;
+  --border-radius: 0.25rem;
+  --border-focus: 1px solid var(--primary-clr-400);
+
+  --submit-background-color: var(--primary-clr-600);
+
+  &__input,
+  &__submit {
+    @include text-style(text-base);
+    padding: var(--input-padding);
+    border: var(--border);
+    border-radius: var(--border-radius);
+  }
+
+  &__input {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &:focus {
+      outline: none;
+      border: var(--border-focus);
+    }
+  }
+
+  &__submit {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--submit-background-color);
+    color: white;
+  }
+}
