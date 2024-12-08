@@ -1,16 +1,20 @@
 @use '../base' as *;
 
 .searchbar {
-  --input-padding: 0.25rem 0.5rem;
+  --input-padding: 0.25rem 1rem;
   --border: 1px solid #e0e0e0;
   --border-radius: 0.25rem;
-  --border-focus: 1px solid var(--primary-clr-400);
+  --border-focus: 1px solid var(--primary-clr-300);
+  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 
   --submit-background-color: var(--primary-clr-600);
 
+  display: flex;
+  max-width: 400px;
+  min-width: 170px;
+
   &__input,
   &__submit {
-    @include text-style(text-base);
     padding: var(--input-padding);
     border: var(--border);
     border-radius: var(--border-radius);
@@ -20,10 +24,15 @@
     border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    box-shadow: var(--box-shadow);
+
+    flex: auto;
+    min-width: 0;
 
     &:focus {
       outline: none;
       border: var(--border-focus);
+      border-right: 0;
     }
   }
 

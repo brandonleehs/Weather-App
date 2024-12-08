@@ -1,0 +1,22 @@
+@use '../layout' as *;
+@use '../abstracts/breakpoints' as *;
+
+@include breakpoint(sm) {
+  @include home--sm();
+}
+
+@include breakpoint(md) {
+  @include home--md();
+}
+
+@include breakpoint(lg) {
+  @include home--lg();
+}
+
+@include breakpoint(xl) {
+  @include home--xl();
+}
+
+@include breakpoint(xxl) {
+  @include home--xxl();
+}

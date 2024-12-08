@@ -1,4 +1,4 @@
-$colors: (
+$_colors: (
   primary: (
     50: #f0f9ff,
     100: #e0f2fe,
@@ -15,7 +15,7 @@ $colors: (
 );
 
 :root {
-  @each $type, $shades in $colors {
+  @each $type, $shades in $_colors {
     @each $shade, $clr in $shades {
       --#{$type}-clr-#{$shade}: #{$clr};
     }

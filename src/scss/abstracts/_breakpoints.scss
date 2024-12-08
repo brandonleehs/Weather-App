@@ -1,0 +1,50 @@
+$_breakpoints: (
+  sm: (
+    min: 576px,
+    max: 575.98px,
+  ),
+  md: (
+    min: 768px,
+    max: 767.98px,
+  ),
+  lg: (
+    min: 992px,
+    max: 991.98px,
+  ),
+  xl: (
+    min: 1200px,
+    max: 1199.98px,
+  ),
+  xxl: (
+    min: 1400px,
+    max: 1399.98px,
+  ),
+);
+
+@mixin breakpoint($breakpoint, $direction: min) {
+  @if map-has-key($_breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($_breakpoints, $breakpoint);
+    $breakpoint-min: map-get($breakpoint-value, min);
+    $breakpoint-max: map-get($breakpoint-value, max);
+
+    @if $direction == min {
+      @media only screen and (min-width: $breakpoint-min) {
+        @content;
+      }
+    } @else {
+      @media only screen and (max-width: $breakpoint-max) {
+        @content;
+      }
+    }
+  } @else {
+    @if $direction == min {
+      @media only screen and (min-width: $breakpoint) {
+        @content;
+      }
+    } @else {
+      @media only screen and (max-width: $breakpoint) {
+        @content;
+      }
+    }
+  }
+}
