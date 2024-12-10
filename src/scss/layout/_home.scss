@@ -7,8 +7,9 @@
 
     --hero-gap: 0.5rem;
 
+    --search-gap: 1rem;
+
     display: grid;
-    justify-items: center;
     gap: var(--form-gap);
     padding: var(--form-padding);
     margin-inline: 1rem;
@@ -17,6 +18,12 @@
   &__hero {
     display: grid;
     gap: var(--hero-gap);
+  }
+
+  &__search {
+    display: grid;
+    gap: var(--search-gap);
+    min-width: 0;
   }
 
   &__heading {
@@ -28,10 +35,16 @@
   }
 }
 
+.unit {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 @mixin home--sm() {
   .home {
     &__form {
-      --gap: 2rem;
+      --form-gap: 2rem;
       --form-padding: 3rem;
     }
 
@@ -44,7 +57,7 @@
 @mixin home--md() {
   .home {
     &__form {
-      --gap: 3rem;
+      --form-gap: 3rem;
       --form-padding: 4rem;
     }
 
@@ -57,7 +70,7 @@
 @mixin home--lg() {
   .home {
     &__form {
-      --gap: 4rem;
+      --form-gap: 4rem;
       --form-padding: 5rem;
     }
 
@@ -70,12 +83,12 @@
 @mixin home--xl() {
   .home {
     &__form {
-      --gap: 5rem;
+      --form-gap: 4rem;
       --form-padding: 6rem;
     }
 
     &__hero {
-      --hero-gap: 1.5rem;
+      --hero-gap: 1rem;
     }
   }
 }
@@ -83,7 +96,7 @@
 @mixin home--xxl() {
   .home {
     &__form {
-      --gap: 6rem;
+      --form-gap: 6rem;
       --form-padding: 7rem;
     }
 

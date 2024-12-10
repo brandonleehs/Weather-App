@@ -74,7 +74,7 @@
 }
 
 // Define the typography scale in a SASS map
-$_typography-scale: (
+$typography-scale: (
   text-xs: (
     font-size: 0.75rem,
     line-height: 1rem,
@@ -130,9 +130,14 @@ $_typography-scale: (
 );
 
 @mixin apply-text-style($size: base) {
-  $style: map-get($_typography-scale, text-#{$size});
+  $style: map-get($typography-scale, text-#{$size});
   font-size: map-get($style, font-size);
   line-height: map-get($style, line-height);
+}
+
+@function get-font-size($size: base) {
+  $style: map-get($typography-scale, text-#{$size});
+  @return map-get($style, font-size);
 }
 
 :root {
@@ -142,5 +147,5 @@ $_typography-scale: (
 
 body {
   font-family: 'Inter', var(--system-ui);
-  @include apply-text-style();
+  color: #212427; // default font color
 }

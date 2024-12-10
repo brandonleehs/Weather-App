@@ -2,7 +2,21 @@
 @use '../base' as *;
 
 .home {
+  &__logo {
+    --border-radius: 1.2rem;
+    --background-color: var(--primary-clr-500);
+    --padding: 0.25rem 0.5rem;
+    --color: white;
+
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    color: var(--color);
+  }
+
   &__form {
+    @include apply-text-style(sm);
+
     --background-color: white;
     --border-radius: 0.5rem;
     --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
@@ -19,67 +33,136 @@
   }
 
   &__subheading {
-    @include apply-text-style(sm);
     font-weight: 300;
+    color: #52525b;
+  }
+}
+
+.unit button {
+  --transition: all 0.3s ease-in-out;
+
+  @include apply-text-style();
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  color: var(--primary-clr-500);
+  border: 2px solid var(--primary-clr-500);
+  background-color: transparent;
+  width: 2.8rem;
+  height: 2.2rem;
+  transition: var(--transition);
+}
+
+.unit button:hover {
+  color: white;
+  background-color: var(--primary-clr-500);
+}
+
+.unit button.active {
+  color: white;
+  background-color: var(--primary-clr-500);
+}
+
+.data-display {
+  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  &::before {
+    width: 1rem;
+    height: 1rem;
+    content: url('../assets/images/gear-spinner.svg');
   }
 }
 
 @mixin home--sm() {
   .home {
+    &__form {
+      @include apply-text-style(base);
+    }
+
     &__heading {
       @include apply-text-style(4xl);
     }
+  }
 
-    &__subheading {
-      @include apply-text-style(base);
-    }
+  .loading::before {
+    width: get-font-size();
+    height: get-font-size();
   }
 }
 
 @mixin home--md() {
   .home {
+    &__form {
+      @include apply-text-style(lg);
+    }
+
     &__heading {
       @include apply-text-style(5xl);
     }
+  }
 
-    &__subheading {
-      @include apply-text-style(lg);
-    }
+  .loading::before {
+    width: get-font-size(lg);
+    height: get-font-size(lg);
   }
 }
 
 @mixin home--lg() {
   .home {
+    &__form {
+      @include apply-text-style(lg);
+    }
+
     &__heading {
       @include apply-text-style(5xl);
     }
+  }
 
-    &__subheading {
-      @include apply-text-style(xl);
-    }
+  .loading::before {
+    width: get-font-size(lg);
+    height: get-font-size(lg);
   }
 }
 
 @mixin home--xl() {
   .home {
+    &__form {
+      @include apply-text-style(xl);
+    }
+
     &__heading {
       @include apply-text-style(5xl);
     }
+  }
 
-    &__subheading {
-      @include apply-text-style(xl);
-    }
+  .loading::before {
+    width: get-font-size(xl);
+    height: get-font-size(xl);
   }
 }
 
 @mixin home--xxl() {
   .home {
+    &__form {
+      @include apply-text-style(3xl);
+    }
+
     &__heading {
       @include apply-text-style(7xl);
     }
+  }
 
-    &__subheading {
-      @include apply-text-style(3xl);
-    }
+  .loading::before {
+    width: get-font-size(3xl);
+    height: get-font-size(3xl);
   }
 }

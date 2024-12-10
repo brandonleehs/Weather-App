@@ -5,7 +5,7 @@
 
 body {
   background-color: var(--primary-clr-50);
-  height: 100svh;
+  min-height: 100svh;
   display: grid;
   place-items: center;
 }
