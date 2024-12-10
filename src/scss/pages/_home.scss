@@ -6,7 +6,7 @@
     --border-radius: 1.2rem;
     --background-color: var(--primary-clr-500);
     --padding: 0.25rem 0.5rem;
-    --color: white;
+    --color: #f2f2f2;
 
     background-color: var(--background-color);
     border-radius: var(--border-radius);
@@ -53,12 +53,12 @@
 }
 
 .unit button:hover {
-  color: white;
+  color: #f2f2f2;
   background-color: var(--primary-clr-500);
 }
 
 .unit button.active {
-  color: white;
+  color: #f2f2f2;
   background-color: var(--primary-clr-500);
 }
 
