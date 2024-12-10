@@ -2,13 +2,21 @@
 
 .home {
   &__form {
-    --gap: 1.5rem;
+    --form-gap: 1.5rem;
     --form-padding: 2rem;
 
+    --hero-gap: 0.5rem;
+
     display: grid;
-    gap: var(--gap);
+    justify-items: center;
+    gap: var(--form-gap);
     padding: var(--form-padding);
     margin-inline: 1rem;
+  }
+
+  &__hero {
+    display: grid;
+    gap: var(--hero-gap);
   }
 
   &__heading {
@@ -26,6 +34,10 @@
       --gap: 2rem;
       --form-padding: 3rem;
     }
+
+    &__hero {
+      --hero-gap: 0.75rem;
+    }
   }
 }
 
@@ -34,6 +46,10 @@
     &__form {
       --gap: 3rem;
       --form-padding: 4rem;
+    }
+
+    &__hero {
+      --hero-gap: 1rem;
     }
   }
 }
@@ -44,6 +60,10 @@
       --gap: 4rem;
       --form-padding: 5rem;
     }
+
+    &__hero {
+      --hero-gap: 1.25rem;
+    }
   }
 }
 
@@ -53,6 +73,10 @@
       --gap: 5rem;
       --form-padding: 6rem;
     }
+
+    &__hero {
+      --hero-gap: 1.5rem;
+    }
   }
 }
 
@@ -61,6 +85,10 @@
     &__form {
       --gap: 6rem;
       --form-padding: 7rem;
+    }
+
+    &__hero {
+      --hero-gap: 1.75rem;
     }
   }
 }

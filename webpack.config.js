@@ -29,9 +29,13 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-        generator: {
-          filename: 'static/[name][ext]',
-        },
+        // generator: {
+        //   filename: 'asset/[name][ext]',
+        // },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.s[ac]ss$/i,

@@ -1,0 +1,146 @@
+// Note that SCSS compiles all SCSS files into one, and any urls should be relative to the
+// entry SCSS file (which was imported in index.js)
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Thin.woff2') format('woff2'),
+    url('../assets/fonts/Inter-Thin.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-ExtraLight.woff2') format('woff2'),
+    url('../assets/fonts/Inter-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Light.woff2') format('woff2'),
+    url('../assets/fonts/Inter-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Inter-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Inter-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('../assets/fonts/Inter-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Inter-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 800;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-ExtraBold.woff2') format('woff2'),
+    url('../assets/fonts/Inter-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 900;
+  font-style: normal;
+  src: url('../assets/fonts/Inter-Black.woff2') format('woff2'),
+    url('../assets/fonts/Inter-Black.ttf') format('ttf');
+}
+
+// Define the typography scale in a SASS map
+$_typography-scale: (
+  text-xs: (
+    font-size: 0.75rem,
+    line-height: 1rem,
+  ),
+  text-sm: (
+    font-size: 0.875rem,
+    line-height: 1.25rem,
+  ),
+  text-base: (
+    font-size: 1rem,
+    line-height: 1.5rem,
+  ),
+  text-lg: (
+    font-size: 1.125rem,
+    line-height: 1.75rem,
+  ),
+  text-xl: (
+    font-size: 1.25rem,
+    line-height: 1.75rem,
+  ),
+  text-2xl: (
+    font-size: 1.5rem,
+    line-height: 2rem,
+  ),
+  text-3xl: (
+    font-size: 1.875rem,
+    line-height: 2.25rem,
+  ),
+  text-4xl: (
+    font-size: 2.25rem,
+    line-height: 2.5rem,
+  ),
+  text-5xl: (
+    font-size: 3rem,
+    line-height: 1,
+  ),
+  text-6xl: (
+    font-size: 3.75rem,
+    line-height: 1,
+  ),
+  text-7xl: (
+    font-size: 4.5rem,
+    line-height: 1,
+  ),
+  text-8xl: (
+    font-size: 6rem,
+    line-height: 1,
+  ),
+  text-9xl: (
+    font-size: 8rem,
+    line-height: 1,
+  ),
+);
+
+@mixin apply-text-style($size: base) {
+  $style: map-get($_typography-scale, text-#{$size});
+  font-size: map-get($style, font-size);
+  line-height: map-get($style, line-height);
+}
+
+:root {
+  --system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+body {
+  font-family: 'Inter', var(--system-ui);
+  @include apply-text-style();
+}

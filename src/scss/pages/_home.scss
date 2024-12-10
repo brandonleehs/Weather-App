@@ -1,4 +1,5 @@
 @use '../components/searchbar';
+@use '../base' as *;
 
 .home {
   &__form {
@@ -10,5 +11,75 @@
     background-color: var(--background-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+  }
+
+  &__heading {
+    @include apply-text-style(3xl);
+    font-weight: 500;
+  }
+
+  &__subheading {
+    @include apply-text-style(sm);
+    font-weight: 300;
+  }
+}
+
+@mixin home--sm() {
+  .home {
+    &__heading {
+      @include apply-text-style(4xl);
+    }
+
+    &__subheading {
+      @include apply-text-style(base);
+    }
+  }
+}
+
+@mixin home--md() {
+  .home {
+    &__heading {
+      @include apply-text-style(5xl);
+    }
+
+    &__subheading {
+      @include apply-text-style(lg);
+    }
+  }
+}
+
+@mixin home--lg() {
+  .home {
+    &__heading {
+      @include apply-text-style(5xl);
+    }
+
+    &__subheading {
+      @include apply-text-style(xl);
+    }
+  }
+}
+
+@mixin home--xl() {
+  .home {
+    &__heading {
+      @include apply-text-style(5xl);
+    }
+
+    &__subheading {
+      @include apply-text-style(xl);
+    }
+  }
+}
+
+@mixin home--xxl() {
+  .home {
+    &__heading {
+      @include apply-text-style(7xl);
+    }
+
+    &__subheading {
+      @include apply-text-style(3xl);
+    }
   }
 }

@@ -1,22 +1,28 @@
-@use '../layout' as *;
+@use '../layout';
+@use '../pages';
 @use '../abstracts/breakpoints' as *;
 
-@include breakpoint(sm) {
-  @include home--sm();
-}
+// @include breakpoint(sm) {
+//   @include layout.home--sm();
+//   @include pages.home--sm();
+// }
 
-@include breakpoint(md) {
-  @include home--md();
-}
+// @include breakpoint(md) {
+//   @include layout.home--md();
+//   @include pages.home--md();
+// }
 
-@include breakpoint(lg) {
-  @include home--lg();
-}
+// @include breakpoint(lg) {
+//   @include layout.home--lg();
+//   @include pages.home--lg();
+// }
 
-@include breakpoint(xl) {
-  @include home--xl();
-}
+// @include breakpoint(xl) {
+//   @include layout.home--xl();
+//   @include pages.home--xl();
+// }
 
-@include breakpoint(xxl) {
-  @include home--xxl();
-}
+// @include breakpoint(xxl) {
+//   @include layout.home--xxl();
+//   @include pages.home--xxl();
+// }

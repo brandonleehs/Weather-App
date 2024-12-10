@@ -16,7 +16,7 @@
   \*********************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `.home__form {\n  --gap: 1.5rem;\n  --form-padding: 2rem;\n  display: grid;\n  gap: var(--gap);\n  padding: var(--form-padding);\n  margin-inline: 1rem;\n}\n.home__heading {\n  text-align: center;\n}\n.home__subheading {\n  text-align: center;\n}\n\n:root {\n  --primary-clr-50: #f0f9ff;\n  --primary-clr-100: #e0f2fe;\n  --primary-clr-200: #bae6fd;\n  --primary-clr-300: #7dd3fc;\n  --primary-clr-400: #38bdf8;\n  --primary-clr-500: #0ea5e9;\n  --primary-clr-600: #0284c7;\n  --primary-clr-700: #0369a1;\n  --primary-clr-800: #075985;\n  --primary-clr-900: #0c4a6e;\n  --primary-clr-950: #082f49;\n}\n\n/*\n  1. Use a more-intuitive box-sizing model.\n*/\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\n/*\n    2. Remove default margin\n  */\n* {\n  margin: 0;\n}\n\n/*\n    Typographic tweaks!\n    3. Add accessible line-height\n    4. Improve text rendering\n  */\nbody {\n  line-height: 1.5;\n  -webkit-font-smoothing: antialiased;\n}\n\n/*\n    5. Improve media defaults\n  */\nimg,\npicture,\nvideo,\ncanvas,\nsvg {\n  display: block;\n  max-width: 100%;\n}\n\n/*\n    6. Remove built-in form typography styles\n  */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/*\n    7. Avoid text overflows\n  */\np,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  overflow-wrap: break-word;\n}\n\n/*\n    8. Create a root stacking context\n  */\n#root,\n#__next {\n  isolation: isolate;\n}\n\n.searchbar {\n  --input-padding: 0.25rem 1rem;\n  --border: 1px solid #e0e0e0;\n  --border-radius: 0.25rem;\n  --border-focus: 1px solid var(--primary-clr-300);\n  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --submit-background-color: var(--primary-clr-600);\n  display: flex;\n  max-width: 400px;\n  min-width: 170px;\n}\n.searchbar__input, .searchbar__submit {\n  padding: var(--input-padding);\n  border: var(--border);\n  border-radius: var(--border-radius);\n}\n.searchbar__input {\n  border-right: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n  box-shadow: var(--box-shadow);\n  flex: auto;\n  min-width: 0;\n}\n.searchbar__input:focus {\n  outline: none;\n  border: var(--border-focus);\n  border-right: 0;\n}\n.searchbar__submit {\n  border-left: 0;\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  background-color: var(--submit-background-color);\n  color: white;\n}\n\n.home__form {\n  --background-color: white;\n  --border-radius: 0.5rem;\n  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),\n    0 2px 4px -2px rgb(0 0 0 / 0.1);\n  background-color: var(--background-color);\n  border-radius: var(--border-radius);\n  box-shadow: var(--box-shadow);\n}\n\n@media only screen and (min-width: 576px) {\n  .home__form {\n    --gap: 2rem;\n    --form-padding: 3rem;\n  }\n}\n@media only screen and (min-width: 768px) {\n  .home__form {\n    --gap: 3rem;\n    --form-padding: 4rem;\n  }\n}\n@media only screen and (min-width: 992px) {\n  .home__form {\n    --gap: 4rem;\n    --form-padding: 5rem;\n  }\n}\n@media only screen and (min-width: 1200px) {\n  .home__form {\n    --gap: 5rem;\n    --form-padding: 6rem;\n  }\n}\n@media only screen and (min-width: 1400px) {\n  .home__form {\n    --gap: 6rem;\n    --form-padding: 7rem;\n  }\n}\nbody {\n  background-color: var(--primary-clr-50);\n  height: 100svh;\n  display: grid;\n  place-items: center;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://template-repo/./src/scss/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Thin.woff2 */ \"./src/assets/fonts/Inter-Thin.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Thin.ttf */ \"./src/assets/fonts/Inter-Thin.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-ExtraLight.woff2 */ \"./src/assets/fonts/Inter-ExtraLight.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-ExtraLight.ttf */ \"./src/assets/fonts/Inter-ExtraLight.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Light.woff2 */ \"./src/assets/fonts/Inter-Light.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Light.ttf */ \"./src/assets/fonts/Inter-Light.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Regular.woff2 */ \"./src/assets/fonts/Inter-Regular.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Regular.ttf */ \"./src/assets/fonts/Inter-Regular.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Medium.woff2 */ \"./src/assets/fonts/Inter-Medium.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Medium.ttf */ \"./src/assets/fonts/Inter-Medium.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-SemiBold.woff2 */ \"./src/assets/fonts/Inter-SemiBold.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-SemiBold.ttf */ \"./src/assets/fonts/Inter-SemiBold.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Bold.woff2 */ \"./src/assets/fonts/Inter-Bold.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Bold.ttf */ \"./src/assets/fonts/Inter-Bold.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_14___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-ExtraBold.woff2 */ \"./src/assets/fonts/Inter-ExtraBold.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_15___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-ExtraBold.ttf */ \"./src/assets/fonts/Inter-ExtraBold.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_16___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Black.woff2 */ \"./src/assets/fonts/Inter-Black.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_17___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/fonts/Inter-Black.ttf */ \"./src/assets/fonts/Inter-Black.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\nvar ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);\nvar ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);\nvar ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);\nvar ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_5___);\nvar ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_6___);\nvar ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_7___);\nvar ___CSS_LOADER_URL_REPLACEMENT_8___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_8___);\nvar ___CSS_LOADER_URL_REPLACEMENT_9___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_9___);\nvar ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_10___);\nvar ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);\nvar ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);\nvar ___CSS_LOADER_URL_REPLACEMENT_13___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_13___);\nvar ___CSS_LOADER_URL_REPLACEMENT_14___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_14___);\nvar ___CSS_LOADER_URL_REPLACEMENT_15___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_15___);\nvar ___CSS_LOADER_URL_REPLACEMENT_16___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_16___);\nvar ___CSS_LOADER_URL_REPLACEMENT_17___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_17___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `.home__form {\n  --form-gap: 1.5rem;\n  --form-padding: 2rem;\n  --hero-gap: 0.5rem;\n  display: grid;\n  justify-items: center;\n  gap: var(--form-gap);\n  padding: var(--form-padding);\n  margin-inline: 1rem;\n}\n.home__hero {\n  display: grid;\n  gap: var(--hero-gap);\n}\n.home__heading {\n  text-align: center;\n}\n.home__subheading {\n  text-align: center;\n}\n\n:root {\n  --primary-clr-50: #f0f9ff;\n  --primary-clr-100: #e0f2fe;\n  --primary-clr-200: #bae6fd;\n  --primary-clr-300: #7dd3fc;\n  --primary-clr-400: #38bdf8;\n  --primary-clr-500: #0ea5e9;\n  --primary-clr-600: #0284c7;\n  --primary-clr-700: #0369a1;\n  --primary-clr-800: #075985;\n  --primary-clr-900: #0c4a6e;\n  --primary-clr-950: #082f49;\n}\n\n/*\n  1. Use a more-intuitive box-sizing model.\n*/\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\n/*\n    2. Remove default margin\n  */\n* {\n  margin: 0;\n}\n\n/*\n    Typographic tweaks!\n    3. Add accessible line-height\n    4. Improve text rendering\n  */\nbody {\n  line-height: 1.5;\n  -webkit-font-smoothing: antialiased;\n}\n\n/*\n    5. Improve media defaults\n  */\nimg,\npicture,\nvideo,\ncanvas,\nsvg {\n  display: block;\n  max-width: 100%;\n}\n\n/*\n    6. Remove built-in form typography styles\n  */\ninput,\nbutton,\ntextarea,\nselect {\n  font: inherit;\n}\n\n/*\n    7. Avoid text overflows\n  */\np,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  overflow-wrap: break-word;\n}\n\n/*\n    8. Create a root stacking context\n  */\n#root,\n#__next {\n  isolation: isolate;\n}\n\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 100;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_1___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 200;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_3___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 300;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_4___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_5___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 400;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_6___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_7___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 500;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_8___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_9___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 600;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_10___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_11___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 700;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_12___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_13___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 800;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_14___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_15___}) format(\"ttf\");\n}\n@font-face {\n  font-family: \"Inter\";\n  font-weight: 900;\n  font-style: normal;\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_16___}) format(\"woff2\"), url(${___CSS_LOADER_URL_REPLACEMENT_17___}) format(\"ttf\");\n}\n:root {\n  --system-ui: system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n}\n\nbody {\n  font-family: \"Inter\", var(--system-ui);\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n\n.searchbar {\n  --input-padding: 0.25rem 1rem;\n  --border: 1px solid #e0e0e0;\n  --border-radius: 0.25rem;\n  --border-focus: 1px solid var(--primary-clr-300);\n  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --submit-background-color: var(--primary-clr-600);\n  display: flex;\n  max-width: 400px;\n  min-width: 170px;\n}\n.searchbar__input, .searchbar__submit {\n  padding: var(--input-padding);\n  border: var(--border);\n  border-radius: var(--border-radius);\n}\n.searchbar__input {\n  border-right: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n  box-shadow: var(--box-shadow);\n  flex: auto;\n  min-width: 0;\n}\n.searchbar__input:focus {\n  outline: none;\n  border: var(--border-focus);\n  border-right: 0;\n}\n.searchbar__submit {\n  border-left: 0;\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  background-color: var(--submit-background-color);\n  color: white;\n}\n\n.home__form {\n  --background-color: white;\n  --border-radius: 0.5rem;\n  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),\n    0 2px 4px -2px rgb(0 0 0 / 0.1);\n  background-color: var(--background-color);\n  border-radius: var(--border-radius);\n  box-shadow: var(--box-shadow);\n}\n.home__heading {\n  font-size: 1.875rem;\n  line-height: 2.25rem;\n  font-weight: 500;\n}\n.home__subheading {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  font-weight: 300;\n}\n\nbody {\n  background-color: var(--primary-clr-50);\n  height: 100svh;\n  display: grid;\n  place-items: center;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://template-repo/./src/scss/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://template-repo/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n  url = String(url.__esModule ? url.default : url);\n\n  // If url is already wrapped in quotes, remove them\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n  if (options.hash) {\n    url += options.hash;\n  }\n\n  // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack://template-repo/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -148,6 +158,186 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar View = /** @class */ (function () {\n    function View() {\n        if (this.constructor === View) {\n            throw new Error('Abstract classes cannot be instantiated.');\n        }\n    }\n    View.prototype.render = function () {\n        throw new Error(\"Method 'render()' must be implemented.\");\n    };\n    return View;\n}());\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (View);\n\n\n//# sourceURL=webpack://template-repo/./src/view/View.ts?");
 
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Black.ttf":
+/*!******************************************!*\
+  !*** ./src/assets/fonts/Inter-Black.ttf ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9f338602a2c79d04ff1c.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Black.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Black.woff2":
+/*!********************************************!*\
+  !*** ./src/assets/fonts/Inter-Black.woff2 ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"037d78a2cd9135e7d2c1.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Black.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Bold.ttf":
+/*!*****************************************!*\
+  !*** ./src/assets/fonts/Inter-Bold.ttf ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1f24ea5f7829811a9307.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Bold.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Bold.woff2":
+/*!*******************************************!*\
+  !*** ./src/assets/fonts/Inter-Bold.woff2 ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"54851dc3f5ada849af04.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Bold.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-ExtraBold.ttf":
+/*!**********************************************!*\
+  !*** ./src/assets/fonts/Inter-ExtraBold.ttf ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"58d3a8bccabac2ee22a5.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-ExtraBold.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-ExtraBold.woff2":
+/*!************************************************!*\
+  !*** ./src/assets/fonts/Inter-ExtraBold.woff2 ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4378ab437cddfc2bbb71.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-ExtraBold.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-ExtraLight.ttf":
+/*!***********************************************!*\
+  !*** ./src/assets/fonts/Inter-ExtraLight.ttf ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"cd91dcb499d8cac2729a.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-ExtraLight.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-ExtraLight.woff2":
+/*!*************************************************!*\
+  !*** ./src/assets/fonts/Inter-ExtraLight.woff2 ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f270980df31d894beaf0.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-ExtraLight.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Light.ttf":
+/*!******************************************!*\
+  !*** ./src/assets/fonts/Inter-Light.ttf ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"00787fe3c74a8d19e3e8.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Light.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Light.woff2":
+/*!********************************************!*\
+  !*** ./src/assets/fonts/Inter-Light.woff2 ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"8b60946b13251c212cac.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Light.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Medium.ttf":
+/*!*******************************************!*\
+  !*** ./src/assets/fonts/Inter-Medium.ttf ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"5f7d781ed23d48af3cbb.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Medium.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Medium.woff2":
+/*!*********************************************!*\
+  !*** ./src/assets/fonts/Inter-Medium.woff2 ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"da6143a97b8ed2ae857b.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Medium.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Regular.ttf":
+/*!********************************************!*\
+  !*** ./src/assets/fonts/Inter-Regular.ttf ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b3b207f0f59cc178c8da.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Regular.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Regular.woff2":
+/*!**********************************************!*\
+  !*** ./src/assets/fonts/Inter-Regular.woff2 ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"85c128721035823e5405.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Regular.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-SemiBold.ttf":
+/*!*********************************************!*\
+  !*** ./src/assets/fonts/Inter-SemiBold.ttf ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f12f49972afe1369d72b.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-SemiBold.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-SemiBold.woff2":
+/*!***********************************************!*\
+  !*** ./src/assets/fonts/Inter-SemiBold.woff2 ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"594041393209f0003754.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-SemiBold.woff2?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Thin.ttf":
+/*!*****************************************!*\
+  !*** ./src/assets/fonts/Inter-Thin.ttf ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c2507234fe03ab9170d8.ttf\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Thin.ttf?");
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Inter-Thin.woff2":
+/*!*******************************************!*\
+  !*** ./src/assets/fonts/Inter-Thin.woff2 ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"330d40f9d3469c8e913e.woff2\";\n\n//# sourceURL=webpack://template-repo/./src/assets/fonts/Inter-Thin.woff2?");
+
 /***/ })
 
 /******/ 	});
@@ -176,6 +366,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -201,6 +394,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -215,6 +420,55 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"index": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
