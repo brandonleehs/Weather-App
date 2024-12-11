@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Weather App is a modern, responsive application that allows users to fetch and view weather data for any location. It integrates with the Visual Crossing's API to fetch weather data. Built with Typescript and SCSS.
+This Weather App is a modern, responsive application that allows users to fetch and view weather data for any location. It integrates with the Visual Crossing's API to fetch weather data. Built with Typescript and SCSS. Deployed on [github pages](https://brandonleehs.github.io/Weather-App/).
 
 ## Features
 
