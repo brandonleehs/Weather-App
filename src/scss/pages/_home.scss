@@ -63,10 +63,119 @@
 }
 
 .data-display {
+  @include apply-text-style(xs);
+
   --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --background: none;
+  --color: #21252b;
+  --background-size: 400% 400%;
+
   border-radius: 1rem;
-  padding: 1rem;
   box-shadow: var(--box-shadow);
+  background: var(--background);
+  color: var(--color);
+  background-size: var(--background-size);
+  animation: gradient 15s ease infinite;
+
+  &--clear {
+    --background: linear-gradient(-45deg, #bae6fd, #7dd3fc, #38bdf8, #0ea5e9);
+  }
+
+  &--cloudy {
+    --background: linear-gradient(-45deg, #e5e7eb, #d1d5db, #9ca3af, #6b7280);
+  }
+
+  &--rain {
+    --background: linear-gradient(
+      -45deg,
+      #4a6583,
+      #6c8094,
+      #4e6881,
+      #697a8c,
+      #3c5369
+    );
+    --color: #e0e0e0;
+  }
+
+  &--storm {
+    --background: linear-gradient(-45deg, #52525b, #3f3f46, #27272a, #18181b);
+    --color: #e0e0e0;
+  }
+
+  &--snow {
+    --background: linear-gradient(-45deg, #cffafe, #a5f3fc, #67e8f9, #22d3ee);
+  }
+
+  &--partially-cloudy {
+    --background: linear-gradient(-45deg, #f3f4f6, #e5e7eb, #d1d5db, #9ca3af);
+  }
+
+  .resolvedaddress {
+    font-weight: 700;
+  }
+
+  .datetime {
+    font-weight: 700;
+  }
+
+  .temp {
+    --drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+      drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    @include apply-text-style(5xl);
+    font-weight: 700;
+    filter: var(--drop-shadow);
+    text-shadow: var(--text-shadow);
+
+    &.celsius::after {
+      content: '°C';
+    }
+
+    &.fahrenheit::after {
+      content: '°F';
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .feelslike {
+    @include apply-text-style(2xl);
+
+    &.celsius::after {
+      content: '°C';
+    }
+
+    &.fahrenheit::after {
+      content: '°F';
+    }
+  }
+
+  .info {
+    fill: var(--color);
+  }
+
+  .humidity::after {
+    content: '%';
+  }
+
+  .windspeed.mph::after {
+    content: ' mph';
+  }
+
+  .windspeed.kph::after {
+    content: ' km/h';
+  }
 }
 
 .loading {
@@ -79,6 +188,13 @@
     width: 1rem;
     height: 1rem;
     content: url('../assets/images/gear-spinner.svg');
+  }
+
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
   }
 }
 
@@ -97,6 +213,18 @@
     width: get-font-size();
     height: get-font-size();
   }
+
+  .data-display {
+    @include apply-text-style(sm);
+
+    .temp {
+      @include apply-text-style(6xl);
+    }
+
+    .feelslike {
+      @include apply-text-style(3xl);
+    }
+  }
 }
 
 @mixin home--md() {
@@ -113,6 +241,18 @@
   .loading::before {
     width: get-font-size(lg);
     height: get-font-size(lg);
+  }
+
+  .data-display {
+    @include apply-text-style(base);
+
+    .temp {
+      @include apply-text-style(7xl);
+    }
+
+    .feelslike {
+      @include apply-text-style(4xl);
+    }
   }
 }
 
@@ -131,6 +271,18 @@
     width: get-font-size(lg);
     height: get-font-size(lg);
   }
+
+  .data-display {
+    @include apply-text-style(lg);
+
+    .temp {
+      @include apply-text-style(7xl);
+    }
+
+    .feelslike {
+      @include apply-text-style(4xl);
+    }
+  }
 }
 
 @mixin home--xl() {
@@ -148,6 +300,18 @@
     width: get-font-size(xl);
     height: get-font-size(xl);
   }
+
+  .data-display {
+    @include apply-text-style(lg);
+
+    .temp {
+      @include apply-text-style(7xl);
+    }
+
+    .feelslike {
+      @include apply-text-style(4xl);
+    }
+  }
 }
 
 @mixin home--xxl() {
@@ -164,5 +328,17 @@
   .loading::before {
     width: get-font-size(3xl);
     height: get-font-size(3xl);
+  }
+
+  .data-display {
+    @include apply-text-style(xl);
+
+    .temp {
+      @include apply-text-style(9xl);
+    }
+
+    .feelslike {
+      @include apply-text-style(6xl);
+    }
   }
 }

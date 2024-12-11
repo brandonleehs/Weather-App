@@ -1,5 +1,5 @@
-import WeatherData from './WeatherData';
+import { WeatherData } from './WeatherData';
 
 export default interface IWeatherApiService {
-  getData: (location: string) => Promise<WeatherData>;
+  getData: (location: string, urlBase: string) => Promise<WeatherData>;
 }

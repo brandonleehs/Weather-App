@@ -1,4 +1,6 @@
 import WeatherApi from '../api/WeatherApi';
+import { DayData } from '../api/WeatherData';
+import WeatherIcons from '../api/WeatherIcons';
 import View from './View';
 
 export default class Home extends View {
@@ -51,22 +53,90 @@ export default class Home extends View {
       e.preventDefault();
       weatherLocationInput.value = '';
 
-      const dataDisplay = document.createElement('section') as HTMLElement;
-      dataDisplay.classList.add('data-display');
-      dataDisplay.innerHTML = `
+      const dataDisplay: HTMLElement | null =
+        document.querySelector('.data-display');
+      if (dataDisplay) {
+        dataDisplay.remove();
+      }
+
+      const newDataDisplay = document.createElement('section') as HTMLElement;
+      newDataDisplay.classList.add('data-display');
+      newDataDisplay.innerHTML = `
       <p class="loading">Fetching weather data...</p>
       `;
       const unit = document.querySelector('.unit') as HTMLDivElement;
-      unit.insertAdjacentElement('afterend', dataDisplay);
+      unit.insertAdjacentElement('afterend', newDataDisplay);
 
       const weatherApi = new WeatherApi();
-      weatherApi
-        .getData(weatherLocation)
+      const dataPromise =
+        localStorage.getItem('unit') === 'celsius'
+          ? weatherApi.getData(weatherLocation, 'metric')
+          : weatherApi.getData(weatherLocation, 'us');
+
+      dataPromise
         .then((data): void => {
-          console.log(data);
+          const currentDay: DayData = data.days[0];
+          let weatherIcon: WeatherIcons;
+          if (currentDay.conditions.toLowerCase().includes('clear')) {
+            weatherIcon = WeatherIcons.CLEAR;
+            newDataDisplay.classList.add('data-display--clear');
+          } else if (currentDay.conditions.toLowerCase() === 'cloudy') {
+            weatherIcon = WeatherIcons.CLOUDY;
+            newDataDisplay.classList.add('data-display--cloudy');
+          } else if (currentDay.conditions.toLowerCase().includes('rain')) {
+            weatherIcon = WeatherIcons.RAIN;
+            newDataDisplay.classList.add('data-display--rain');
+          } else if (currentDay.conditions.toLowerCase().includes('storm')) {
+            weatherIcon = WeatherIcons.STORM;
+            newDataDisplay.classList.add('data-display--storm');
+          } else if (currentDay.conditions.toLowerCase().includes('snow')) {
+            weatherIcon = WeatherIcons.SNOW;
+            newDataDisplay.classList.add('data-display--snow');
+          } else {
+            weatherIcon = WeatherIcons.PARTIALLY_CLOUDY;
+            newDataDisplay.classList.add('data-display--partially-cloudy');
+          }
+
+          newDataDisplay.innerHTML = `
+          <header>
+            <p class="resolvedaddress">${
+              data.resolvedAddress
+            }</p><p class="datetime">${currentDay.datetime}</p>
+          </header>
+          <main>
+            <p class="temp ${localStorage.getItem('unit')}">${
+            currentDay.temp
+          }</p>
+            <p class="feelslike ${localStorage.getItem('unit')}">${
+            currentDay.feelslike
+          }</p>
+            <p class="description">${currentDay.description}</p>
+          </main>
+          <footer>
+          <div class="info info--humidity">
+            ${WeatherIcons.HUMIDITY}
+            <p class="humidity">${currentDay.humidity}</p>
+          </div>
+          <div class="info info--windspeed">
+            ${WeatherIcons.WINDSPEED}
+            <p class="windspeed ${
+              localStorage.getItem('unit') === 'celsius' ? 'kph' : 'mph'
+            }">${currentDay.windspeed}</p>
+          </div>
+          <div class="info info--conditions">
+            ${weatherIcon}
+            <p class="conditions">${currentDay.conditions}</p>
+          </div>
+          </footer>
+          `;
         })
         .catch((e: Error): void => {
-          // Display error
+          const dataDisplay = document.querySelector(
+            '.data-display'
+          ) as HTMLElement;
+          dataDisplay.innerHTML = `
+          <p class="error">❌ Oops! Unable to fetch weather data. Please check your location and try again.</p>
+          `;
         });
     });
   }
@@ -84,21 +154,65 @@ export default class Home extends View {
 
     if (!unit || unit == 'celsius') {
       celsiusButton.classList.add('active');
+      localStorage.setItem('unit', 'celsius');
     } else {
       fahrenheitButton.classList.add('active');
+      localStorage.setItem('unit', 'fahrenheit');
     }
 
     celsiusButton.addEventListener('click', (e: Event): void => {
+      if (localStorage.getItem('unit') == 'celsius') {
+        return;
+      }
       celsiusButton.classList.add('active');
       fahrenheitButton.classList.remove('active');
 
       localStorage.setItem('unit', 'celsius');
+      const temp = document.querySelector('.temp') as HTMLParagraphElement;
+      const feelslike = document.querySelector(
+        '.feelslike'
+      ) as HTMLParagraphElement;
+      const windspeed = document.querySelector(
+        '.windspeed'
+      ) as HTMLParagraphElement;
+      temp.className = 'temp celsius';
+      feelslike.className = 'feelslike celsius';
+      windspeed.className = 'windspeed kph';
+      temp.innerText = getCelsius(parseFloat(temp.innerText)).toString();
+      feelslike.innerText = getCelsius(
+        parseFloat(feelslike.innerText)
+      ).toString();
+      windspeed.innerText = (
+        Math.round(parseFloat(windspeed.innerText) * 0.621371 * 10) / 10
+      ).toString();
     });
+
     fahrenheitButton.addEventListener('click', (e: Event): void => {
+      if (localStorage.getItem('unit') == 'fahrenheit') {
+        return;
+      }
       fahrenheitButton.classList.add('active');
       celsiusButton.classList.remove('active');
 
       localStorage.setItem('unit', 'fahrenheit');
+
+      const temp = document.querySelector('.temp') as HTMLParagraphElement;
+      const feelslike = document.querySelector(
+        '.feelslike'
+      ) as HTMLParagraphElement;
+      const windspeed = document.querySelector(
+        '.windspeed'
+      ) as HTMLParagraphElement;
+      temp.className = 'temp fahrenheit';
+      feelslike.className = 'feelslike fahrenheit';
+      windspeed.className = 'windspeed mph';
+      temp.innerText = getFahrenheit(parseFloat(temp.innerText)).toString();
+      feelslike.innerText = getFahrenheit(
+        parseFloat(feelslike.innerText)
+      ).toString();
+      windspeed.innerText = (
+        Math.round(parseFloat(windspeed.innerText) * 1.60934 * 10) / 10
+      ).toString();
     });
   }
 }
@@ -127,4 +241,12 @@ function storageAvailable(type: any) {
       storage.length !== 0
     );
   }
+}
+
+function getFahrenheit(celsius: number): number {
+  return Math.round(((celsius * 9) / 5 + 32) * 10) / 10;
+}
+
+function getCelsius(fahrenheit: number): number {
+  return Math.round((((fahrenheit - 32) * 5) / 9) * 10) / 10;
 }

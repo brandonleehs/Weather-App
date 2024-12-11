@@ -13,6 +13,7 @@
     gap: var(--form-gap);
     padding: var(--form-padding);
     margin-inline: 1rem;
+    margin: 2rem;
   }
 
   &__hero {
@@ -41,6 +42,54 @@
   gap: 1rem;
 }
 
+.data-display {
+  --data-display-padding: 1.5rem;
+  --data-display-gap: 1.5rem;
+
+  display: grid;
+  gap: var(--data-display-gap);
+  padding: var(--data-display-padding);
+
+  & header {
+    display: flex;
+    align-items: center;
+
+    .datetime {
+      margin-left: auto;
+    }
+  }
+
+  & main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & p {
+      text-align: center;
+    }
+  }
+
+  & footer {
+    display: grid;
+    gap: 0.5rem;
+
+    @media only screen and (min-width: 350px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    & p {
+      text-align: center;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}
+
 @mixin home--sm() {
   .home {
     &__form {
@@ -65,18 +114,26 @@
       --hero-gap: 1rem;
     }
   }
+
+  .data-display main {
+    gap: 1rem;
+  }
 }
 
 @mixin home--lg() {
   .home {
     &__form {
-      --form-gap: 4rem;
-      --form-padding: 5rem;
+      --form-gap: 3rem;
+      --form-padding: 4rem;
     }
 
     &__hero {
       --hero-gap: 1.25rem;
     }
+  }
+
+  .data-display main {
+    gap: 1rem;
   }
 }
 
@@ -84,12 +141,16 @@
   .home {
     &__form {
       --form-gap: 4rem;
-      --form-padding: 6rem;
+      --form-padding: 5rem;
     }
 
     &__hero {
       --hero-gap: 1rem;
     }
+  }
+
+  .data-display main {
+    gap: 1rem;
   }
 }
 
@@ -103,5 +164,8 @@
     &__hero {
       --hero-gap: 1.75rem;
     }
+  }
+  .data-display main {
+    gap: 1.5rem;
   }
 }

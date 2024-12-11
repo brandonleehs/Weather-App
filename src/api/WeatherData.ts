@@ -1,6 +1,5 @@
-export default interface WeatherData {
+interface WeatherData {
   resolvedAddress: string;
-  address: string;
   timezone: string;
   description: string;
   days: Array<DayData>;
@@ -12,5 +11,8 @@ interface DayData {
   feelslike: number;
   humidity: number;
   windspeed: number;
+  description: string;
   conditions: string;
 }
+
+export { WeatherData, DayData };
