@@ -6,10 +6,10 @@ This Weather App is a modern, responsive application that allows users to fetch 
 
 ## Features
 
-- Searches weather conditions for any city or location.
-- Displays current weather, temperature, and additional details.
-- Supports metric and imperial units (e.g., Celsius/Fahrenheit, km/h/mph).
-- Responsive design suitable for mobile, tablet, and desktop devices.
+- 🌎 Searches weather conditions for any city or location.
+- ⛅ Displays current weather, temperature, and additional details.
+- ⚙️ Supports metric and imperial units (e.g., Celsius/Fahrenheit, km/h/mph).
+- 📱 Responsive design suitable for mobile, tablet, and desktop devices.
 
 Note the rate limit for Visual Crossing's API.
 
